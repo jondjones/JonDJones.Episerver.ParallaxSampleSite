@@ -1,0 +1,17 @@
+﻿@model JonDJones.Com.Core.ViewModel.Pages.StartPageViewModel
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>@Model.CurrentPage.MainTitle</h1>
+            <hr>
+            <p>
+                @Model.CurrentPage.MainDescription
+            </p>
+            
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        </div>
+    </div>
+</header>
+
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea)

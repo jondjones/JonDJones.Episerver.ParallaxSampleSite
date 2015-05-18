@@ -1,0 +1,11 @@
+﻿@model JonDJones.com.Core.ViewModel.Blocks.TabPortfolioViewModel
+
+<section class="no-padding" id="@Model.CurrentBlock.TabName">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+
+            @Html.PropertyFor(x => x.CurrentBlock.PortfolioGallery)
+
+        </div>
+    </div>
+</section>

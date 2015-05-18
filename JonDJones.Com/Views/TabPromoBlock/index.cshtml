@@ -1,0 +1,18 @@
+﻿@model JonDJones.com.Core.ViewModel.Blocks.TabPromoViewModel
+
+<section class="bg-primary" id="@Model.CurrentBlock.TabName">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">
+                    @Model.CurrentBlock.MainTitle
+                </h2>
+                <hr class="light">
+                <p class="text-faded">
+                    @Model.CurrentBlock.MainDescription
+                </p>
+                <a href="@Model.LinkUrl" class="btn btn-default btn-xl">@Model.CurrentBlock.LinkText</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+﻿@model JonDJones.com.Core.ViewModel.Blocks.AsideItemViewModel
+
+<<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>
+                @Model.CurrentBlock.AsideTitle
+            </h2>
+            <a href="@Model.LinkUrl" class="btn btn-default btn-xl wow tada" style="visibility: visible;">
+            @Model.CurrentBlock.AsideDescription
+            </a>
+        </div>
+    </div>
+</aside>
